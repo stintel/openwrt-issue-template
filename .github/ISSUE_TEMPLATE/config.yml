@@ -1,0 +1,9 @@
+---
+blank_issues_enabled: false
+contact_links:
+  - name: OpenWrt contact
+    url: https://openwrt.org/contact
+    about: Consider reaching out to our community to get help. OpenWrt is a complex software project with many pitfalls; there is a good chance someone can help you solve your issue in no time.
+  - name: OpenWrt documentation
+    url: https://openwrt.org/docs/start
+    about: The OpenWrt documentation contains a lot of valuable information.
