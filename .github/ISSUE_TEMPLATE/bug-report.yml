@@ -67,4 +67,11 @@ body:
     attributes:
       value: |
         ```./scripts/diffconfig.sh```
-
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Terms
+      description: By submitting this issue, you agree to the terms below.
+      options:
+        - label: I am reporting an issue for OpenWrt, not an unsupported fork.
+          required: true
