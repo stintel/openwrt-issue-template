@@ -54,10 +54,20 @@ body:
       label: Steps to reproduce
       description: Steps to reproduce the reported behaviour.
   - type: textarea
+    id: behaviour
+    attributes:
+      label: Actual behaviour
+      description: A clear and concise description of what actually happens.
+  - type: textarea
     id: expected
     attributes:
       label: Expected behaviour
       description: A clear and concise description of what you expected to happen.
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional info
+      description: Add any additional info you think might be helfpul.
   - type: textarea
     id: diffconfig
     attributes:
