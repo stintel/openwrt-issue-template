@@ -14,7 +14,7 @@ body:
     id: version
     attributes:
       label: OpenWrt version
-      description: The OpenWrt release or commit hash where this bug occurs.
+      description: The OpenWrt release or commit hash where this bug occurs (use command below).
     validations:
       required: true
   - type: markdown
@@ -25,7 +25,7 @@ body:
     id: target
     attributes:
       label: OpenWrt target/subtarget
-      description: The OpenWrt target and subtarget where this bug is observed.
+      description: The OpenWrt target and subtarget where this bug is observed (use command below).
     validations:
       required: true
   - type: markdown
