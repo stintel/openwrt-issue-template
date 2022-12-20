@@ -25,7 +25,7 @@ body:
       label: OpenWrt target/subtarget
       description: |
         The OpenWrt target and subtarget where this bug is observed (use command below).
-        ```. /etc/openwrt/release && echo $DISTRIB_TARGET```
+        ```. /etc/openwrt_release && echo $DISTRIB_TARGET```
     validations:
       required: true
   - type: input
