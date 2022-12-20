@@ -71,6 +71,7 @@ body:
       description: |
         In case of a self-built image, please attach diffconfig.
         ```./scripts/diffconfig.sh```
+      render: text
   - type: checkboxes
     id: terms
     attributes:
