@@ -14,24 +14,20 @@ body:
     id: version
     attributes:
       label: OpenWrt version
-      description: The OpenWrt release or commit hash where this bug occurs (use command below).
+      description: |
+        The OpenWrt release or commit hash where this bug occurs (use command below).
+        ```. /etc/openwrt_release && echo $DISTRIB_REVISION```
     validations:
       required: true
-  - type: markdown
-    attributes:
-      value: |
-        ```. /etc/openwrt_release && echo $DISTRIB_REVISION```
   - type: input
     id: target
     attributes:
       label: OpenWrt target/subtarget
-      description: The OpenWrt target and subtarget where this bug is observed (use command below).
+      description: |
+        The OpenWrt target and subtarget where this bug is observed (use command below).
+        ```. /etc/openwrt/release && echo $DISTRIB_TARGET```
     validations:
       required: true
-  - type: markdown
-    attributes:
-      value: |
-        ```. /etc/openwrt/release && echo $DISTRIB_TARGET```
   - type: input
     id: device
     attributes:
@@ -72,10 +68,8 @@ body:
     id: diffconfig
     attributes:
       label: Diffconfig
-      description: In case of a self-built image, please attach diffconfig.
-  - type: markdown
-    attributes:
-      value: |
+      description: |
+        In case of a self-built image, please attach diffconfig.
         ```./scripts/diffconfig.sh```
   - type: checkboxes
     id: terms
